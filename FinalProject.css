@@ -124,6 +124,10 @@ footer p {
     color: white;
 }
 
+.element-invisible {
+    display: none;
+}
+
 /* Responsive Design */
 
 /* Mobile (up to 480px) */
