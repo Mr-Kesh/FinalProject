@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Mukta', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Skip Link Styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: black; /* Updated to darker royal purple */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: top 0.3s ease;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Header, Footer, and Main Content */
+header, footer {
+    background-color: #4B0082; /* Updated to darker royal purple */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1, footer p {
+    font-family: 'Bitter', serif;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #4B0082; /* Updated to darker royal purple */
+    text-align: center;
+    padding: 0.5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    color: #4B0082; /* Updated to darker royal purple */
+}
+
+/* Section Headings */
+h2 {
+    font-family: 'Bitter', serif;
+    color: #4B0082; /* Updated to darker royal purple */
+    font-size: 1.8em;
+    margin-top: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Additional spacing between sections */
+section {
+    margin-bottom: 40px; /* Adds more space between each section */
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+/* Footer Style */
+footer {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+/* Responsive Design */
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    header, footer {
+        padding: 0.8em;
+    }
+}
+
+/* Tablet (481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 20px;
+        max-width: 900px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
