@@ -109,13 +109,13 @@ footer {
 /* Tablet Styles */
 @media (max-width: 768px) {
     .content-grid {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         gap: 1em;
         padding: 1.5em;
     }
 
     .nav-list {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column; 
         gap: 0.5em;
     }
 
