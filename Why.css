@@ -5,7 +5,7 @@ body, h1, h2, h3, p, ul, li, a, button {
     box-sizing: border-box;
 }
 
-.hiudden {
+.hidden {
     display: none;
 }
 
