@@ -6,7 +6,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-
 .skip-nav {
     position: absolute;
     top: -40px;
@@ -173,7 +172,7 @@ hr.white-hr {
 
 
 code {
-    color: #efbf04; 
+    color: purple; 
     font-weight: bold;
 }
 
