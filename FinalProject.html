@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jeshua's Class Portal</title>
+
+    <!-- Preconnects to Google's font servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: These are the fonts I used for different text styles throughout the page -->
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Mukta:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="FinalProject.css">
+
+    <!-- Links to my JavaScript file for the hambruger menu stuff -->
+    <script src="FinalProject.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content-start" class="skip-nav" tabindex="0">Skip to main content</a>
+
+    <header>
+        <!-- This is so it doesn't say untitled on HTML Outliner-->
+        <h2 class="hidden" tabindex="-1">Jeshua's Class Portal</h2>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading" tabindex="-1">
+
+        <header>
+            <!-- Hidden heading for screen readers to identify the section -->
+            <h2 id="hero-heading" class="hidden" tabindex="-1">Hero Section</h2>
+        </header>
+
+        <!-- Navigation Bar -->
+        <header class="navbar" aria-labelledby="navbar-heading">
+
+            <h2 id="navbar-heading" class="hidden" tabindex="-1">Navigation Bar</h2>
+
+            <div class="header-title">
+                <a id="site-title" href="/" class="logo" tabindex="0">Universal Design</a>
+            </div>
+
+            <!-- Hamburger menu for mobile view -->
+            <button class="hamburger-icon" id="hamburger-icon" aria-expanded="false" aria-label="Toggle navigation"
+                tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation menu -->
+            <nav class="header-nav">
+                <h2 class="hidden" tabindex="-1">Navigation Menu</h2>
+                <ul class="header-nav-list" id="nav-menu" role="menu">
+                    <li class="header-nav-item" role="menuitem">
+                        <a href="FinalProject.html" tabindex="0">Home</a>
+                    </li>
+                    <li class="header-nav-item" role="menuitem">
+                        <a href="What.html" tabindex="0">What</a>
+                    </li>
+                    <li class="header-nav-item" role="menuitem">
+                        <a href="Why.html" tabindex="0">Why</a>
+                    </li>
+                    <li class="header-nav-item" role="menuitem">
+                        <a href="How.html" tabindex="0">How</a>
+                    </li>
+                    <li class="header-nav-item special" role="menuitem">
+                        <a href="https://mr-kesh.github.io/Contact/" tabindex="0">Contact Me!</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Content -->
+        <div id="hero-content" class="hero-content" tabindex="-1">
+
+            <header>
+                <!-- Main tagline for the section -->
+                <h1 class="tagline" id="hero-tagline" tabindex="0">Universal Design</h1>
+            </header>
+
+
+
+            <!-- Button Container -->
+            <div class="toplayer">
+                <!-- Button labeled for accessibility -->
+                <label for="click-toggle" class="btn" aria-controls="click-modal"
+                    aria-label="Click to toggle information" tabindex="0">Click Me!!</label>
+            </div>
+
+            <input type="checkbox" id="click-toggle" hidden>
+            <div class="layer" id="click-modal" role="dialog" aria-labelledby="modal-heading" aria-hidden="true">
+                <button class="close-btn" aria-label="Close modal" onclick="closeModal()" tabindex="0">&times;</button>
+
+                <p id="modal-heading">
+                    Universal Design is all about creating things that everyone can use, no matter their abilities or
+                    disabilities. It focuses on making environments, products, and websites easy for everyone to access
+                    and understand. Accessibility is a big part of this, making sure people with disabilities, like
+                    vision, hearing, or mobility challenges, can still fully use and enjoy what’s being offered. This
+                    means adding things like captions for videos, easy to use layouts, and options for screen readers.
+                    By thinking about everyone's needs, Universal Design helps make the world more fair and inclusive
+                    for all.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="main-content-start" class="blog-section" aria-labelledby="about-heading">
+
+        <header>
+            <h2 id="about-heading" class="section-heading" tabindex="0">About Universal Design</h2>
+        </header>
+
+        <div class="blog-container">
+
+            <!-- Blog Item 1 -->
+            <article class="blog-item animate" aria-labelledby="blog-title-1">
+                <div class="blog-text-content">
+
+                    <header>
+                        <h3 id="blog-title-1" class="blog-title titles">What is Universal Design?</h3>
+                    </header>
+
+                    <p class="paragraph">
+                        Universal Design is all about making websites that anyone can use, no matter their abilities or
+                        devices. It’s about creating online spaces that are easy, fair, and welcoming for everyone.
+                    </p>
+                </div>
+                <figure class="blog-image-container">
+                    <img src="accessibledesign.jpg" alt="An illustration of accessible web design" class="blog-image">
+                    <figcaption>Designing for everyone, everywhere</figcaption>
+                </figure>
+            </article>
+
+            <!-- Blog Item 2 -->
+            <article class="blog-item animate" aria-labelledby="blog-title-2">
+                <div class="blog-text-content">
+
+                    <header>
+                        <h3 id="blog-title-2" class="blog-title titles">Why is it Important?</h3>
+                    </header>
+
+                    <p class="paragraph">
+                        We use the internet for everything these days, so it’s important to make sure nobody is left
+                        out. Accessibility breaks down barriers for people with disabilities and makes websites better
+                        for everyone.
+                    </p>
+                </div>
+                <figure class="blog-image-container">
+                    <img src="importance.jpg" alt="A person using an accessible web interface" class="blog-image">
+                    <figcaption>Creating fair and equal online experiences</figcaption>
+                </figure>
+            </article>
+
+            <!-- Blog Item 3 -->
+            <article class="blog-item animate" aria-labelledby="blog-title-3">
+                <div class="blog-text-content">
+
+                    <header>
+                        <h3 id="blog-title-3" class="blog-title titles">How We Do It</h3>
+                    </header>
+
+                    <p class="paragraph">
+                        We keep things simple and easy to use. This means using clear code, designing layouts that
+                        adjust to different screens, and adding features like alt text and captions to make websites
+                        work for everyone.
+                    </p>
+                </div>
+                <figure class="blog-image-container">
+                    <img src="process.jpg" alt="A team collaborating on website design" class="blog-image">
+                    <figcaption>Working together for an inclusive internet</figcaption>
+                </figure>
+            </article>
+
+            <!-- Blog Item 4 -->
+            <article class="blog-item animate" aria-labelledby="blog-title-4">
+                <div class="blog-text-content">
+
+                    <header>
+                        <h3 id="blog-title-4" class="blog-title titles">Who Benefits?</h3>
+                    </header>
+
+                    <p class="paragraph">
+                        Everyone benefits, accessibility is great for people with disabilities, but it also helps
+                        anyone using a phone or just learning how to use the internet.
+                    </p>
+                </div>
+                <figure class="blog-image-container">
+                    <img src="benefits.jpg" alt="An elderly person navigating a website easily" class="blog-image">
+                    <figcaption>Designing with everyone in mind</figcaption>
+                </figure>
+            </article>
+
+            <!-- Blog Item 5 -->
+            <article class="blog-item animate" aria-labelledby="blog-title-5">
+                <div class="blog-text-content">
+
+                    <header>
+                        <h3 id="blog-title-5" class="blog-title titles">What My Website Is About</h3>
+                    </header>
+
+                    <p class="paragraph">
+                        I created this to help people learn more about accessiblity in web design.
+                    </p>
+                </div>
+                <figure class="blog-image-container">
+                    <img src="commitment.jpg" alt="A website designed with accessibility in mind" class="blog-image">
+                    <figcaption>Inclusivity for all</figcaption>
+                </figure>
+            </article>
+        </div>
+
+    </section>
+
+
+    <section class="projects-section" aria-labelledby="projects-heading">
+        <div class="projects-content">
+
+            <header>
+                <h2 id="projects-heading" class="section-heading">Accessibility Resources</h2>
+            </header>
+
+            <div class="projects-grid">
+
+                <!-- Resource Card 1 -->
+                <a href="https://www.w3.org/WAI/" class="project-card">
+                    <figure>
+                        <img src="W3C.png" alt="Screenshot of W3C Accessibility page" class="project-image">
+                        <figcaption>W3C Accessibility Guidelines</figcaption>
+                    </figure>
+
+                    <header>
+                        <h3 class="project-title">W3C Accessibility Guidelines</h3>
+                    </header>
+
+                    <p class="project-date">Updated Regularly</p>
+                </a>
+
+                <!-- Resource Card 2 -->
+                <a href="https://wave.webaim.org/" class="project-card">
+                    <figure>
+                        <img src="WAVE.png" alt="Screenshot of the WAVE tool" class="project-image">
+                        <figcaption>WAVE Web Accessibility Tool</figcaption>
+                    </figure>
+
+                    <header>
+                        <h3 class="project-title">WAVE Web Accessibility Tool</h3>
+                    </header>
+
+                    <p class="project-date">Updated Regularly</p>
+                </a>
+
+                <!-- Resource Card 3 -->
+                <a href="https://a11yproject.com/" class="project-card">
+                    <figure>
+                        <img src="A11Y.png" alt="Screenshot of A11Y Project homepage" class="project-image">
+                        <figcaption>A11Y Project</figcaption>
+                    </figure>
+
+                    <header>
+                        <h3 class="project-title">A11Y Project</h3>
+                    </header>
+
+                    <p class="project-date">Updated Regularly</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="hobbies-section" aria-labelledby="hobbies-heading">
+
+        <header>
+            <h2 id="hobbies-heading" class="section-heading">Key Areas of Universal Design</h2>
+        </header>
+
+        <div class="hobbies-grid">
+
+            <!-- Area 1 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-visual">Visual Accessibility</h3>
+                </header>
+                <p>
+                    Making things easier for people with vision problems by using clear colors, adding alt text to
+                    images, and supporting screen readers.
+                </p>
+                <a href="https://usabilitygeek.com/6-principles-visual-accessibility-design/" class="learn-more-btn"
+                    aria-labelledby="area-visual">Learn More</a>
+            </article>
+
+            <!-- Area 2 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-auditory">Auditory Accessibility</h3>
+                </header>
+                <p>
+                    Helping people with hearing problems by adding captions to videos, providing transcripts, and using
+                    visual alerts for sounds.
+                </p>
+                <a href="https://www.w3.org/WAI/people-use-web/abilities-barriers/auditory/" class="learn-more-btn"
+                    aria-labelledby="area-auditory">Learn
+                    More</a>
+            </article>
+
+            <!-- Area 3 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-mobility">Mobility Accessibility</h3>
+                </header>
+                <p>
+                    Making things easier to use for people with mobility issues by allowing keyboard navigation and
+                    designing comfortable layouts.
+                </p>
+                <a href="https://support.microsoft.com/en-us/topic/accessibility-tools-for-mobility-19ff5a45-2d68-4306-9602-05c0aa967c9f"
+                    class="learn-more-btn" aria-labelledby="area-mobility">Learn
+                    More</a>
+            </article>
+
+            <!-- Area 4 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-cognitive">Cognitive Accessibility</h3>
+                </header>
+                <p>
+                    Keeping designs simple and easy to follow for people with learning or thinking challenges by using
+                    clear layouts and simple language.
+                </p>
+                <a href="https://www.w3.org/WAI/cognitive/" class="learn-more-btn"
+                    aria-labelledby="area-cognitive">Learn More</a>
+            </article>
+
+            <!-- Area 5 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-speech">Speech Accessibility</h3>
+                </header>
+                <p>
+                    Helping people who have trouble speaking by providing tools like text messaging and other ways to
+                    communicate.
+                </p>
+                <a href="https://www.w3.org/WAI/people-use-web/abilities-barriers/speech/" class="learn-more-btn"
+                    aria-labelledby="area-speech">Learn More</a>
+            </article>
+
+            <!-- Area 6 -->
+            <article class="hobby-item">
+                <header>
+                    <h3 id="area-inclusive">Inclusive Design</h3>
+                </header>
+                <p>
+                    Making sure designs work for everyone, no matter their abilities, to create a fair and inclusive
+                    experience for all.
+                </p>
+                <a href="https://www.nngroup.com/articles/inclusive-design/#:~:text=sense%20of%20belonging.-,Inclusive%20design%20describes%20methodologies%20to%20create%20products%20that%20understand%20and,location%2C%20language%2C%20and%20race."
+                    class="learn-more-btn" aria-labelledby="area-inclusive">Learn More</a>
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <section class="image-collage" aria-labelledby="interests-heading">
+
+        <!-- Section heading for screen readers and structure -->
+        <h2 id="interests-heading" class="section-heading" tabindex="0">We Need the World to Be More Accessible</h2>
+
+        <figure class="collage-item large" tabindex="0">
+            <img src="Roboto.jpg" alt="Person with a mobility disability">
+            <figcaption tabindex="0">Person with a mobility disability</figcaption>
+        </figure>
+
+        <figure class="collage-item small" tabindex="0">
+            <img src="GrabFistBump.jpg" alt="Person with mobility disability using a unique wheelchair to work">
+            <figcaption tabindex="0">Person with mobility disability using a unique wheelchair to work</figcaption>
+        </figure>
+
+        <figure class="collage-item small" tabindex="0">
+            <img src="Crutch.jpg" alt="Woman with a mobility disability working">
+            <figcaption tabindex="0">Woman with a mobility disability working</figcaption>
+        </figure>
+
+        <figure class="collage-item medium" tabindex="0">
+            <img src="Deaf.jpg" alt="Person with a hearing disability">
+            <figcaption tabindex="0">Person with a hearing disability</figcaption>
+        </figure>
+
+        <figure class="collage-item small" tabindex="0">
+            <img src="blind.jpg" alt="A blind man with his guide dog">
+            <figcaption tabindex="0">A blind man with his guide dog</figcaption>
+        </figure>
+
+        <figure class="collage-item small" tabindex="0">
+            <img src="adhd.jpg" alt="A person with ADHD (Learning Disability)">
+            <figcaption tabindex="0">A person with ADHD (Learning Disability)</figcaption>
+        </figure>
+    </section>
+
+
+
+
+    <section class="inspiration-section" aria-labelledby="inspiration-heading">
+
+        <header>
+            <h2 id="inspiration-heading" class="section-heading" tabindex="0">My Favorite Quote on Accessibility</h2>
+        </header>
+
+        <div class="inspiration-card" tabindex="0">
+            <blockquote tabindex="0">
+                “I wish for a world that views disability, mental or physical, not as a hindrance but as unique
+                attributes that can be seen as powerful assets if given the right opportunities”
+            </blockquote>
+            <cite tabindex="0">- Oliver Sacks</cite>
+        </div>
+    </section>
+
+
+
+
+    <footer aria-labelledby="social-media-heading">
+
+        <h2 id="social-media-heading" class="hidden" tabindex="0">My Social Media</h2>
+
+        <!-- Social Media Links -->
+        <div class="footer-content" role="navigation" aria-label="Social Media Links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter"
+                aria-label="Twitter" tabindex="0"></a>
+            <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer" class="social-icon google"
+                aria-label="Google Plus" tabindex="0"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook"
+                aria-label="Facebook" tabindex="0"></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin"
+                aria-label="LinkedIn" tabindex="0"></a>
+            <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" class="social-icon reddit"
+                aria-label="Reddit" tabindex="0"></a>
+        </div>
+
+        <!-- Footer Credits -->
+        <div tabindex="0">
+            <p>Made With ❤️ by Jeshua Dimawea</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

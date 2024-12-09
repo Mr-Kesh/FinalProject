@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Mukta:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="How.css">
+
+    <title>Universal Design | How</title>
+</head>
+
+<body>
+
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-nav" tabindex="0">Skip to main content</a>
+
+
+    <h2 class="element-invisible">Universal Design | How</h2>
+
+    <nav class="nav">
+        <h2 class="element-invisible">Navigation</h2>
+        <ul>
+            <li><a href="FinalProject.html">Home</a></li>
+            <li><a href="https://mr-kesh.github.io/Contact/">Contact Me!</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Universal Design | How</h1>
+        <p>This is how to make websites accessibile!</p>
+        <hr class="white-hr">
+    </header>
+
+    <div class="container">
+        <aside class="aside-left">
+            <h4>Navigation</h4>
+            <nav aria-label="Sidebar Navigation">
+                <header class="hidden">
+                    <h3>Sidebar Navigation Menu</h3>
+                </header>
+                <ul>
+                    <li>
+                        <details>
+                            <summary><b>Best Practices for Accessibility in Web Design</b></summary>
+                            <ul>
+                                <li><a href="#best-practices">Best Practices for Accessibility in Web Design</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <details>
+                            <summary><b>Fundamentals of Accessible Design</b></summary>
+                            <ul>
+                                <li><a href="#keyboard-navigation">Keyboard Navigation</a></li>
+                                <li><a href="#color-contrast">Color Contrast</a></li>
+                                <li><a href="#alternative-text">Alternative Text</a></li>
+                                <li><a href="#aria-roles-attributes">ARIA Roles and Attributes</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <details>
+                            <summary><b>Accessible Text and Layout Techniques</b></summary>
+                            <ul>
+                                <li><a href="#accessible-font-size">Accessible Font Size</a></li>
+                                <li><a href="#relative-units">Relative Units for Accessibility</a></li>
+                                <li><a href="#rem-scaling">Rem for Consistent Scaling</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <details>
+                            <summary><b>Which Approach is Best for Accessibility?</b></summary>
+                            <ul>
+                                <li><a href="#best-approach">Which Approach is Best for Accessibility?</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content" class="content">
+            <p class="info">12.09.2024 | <code><span>HOW TO BE ACCESSIBLE</span></code></p>
+
+            <article aria-labelledby="best-practices">
+                <header>
+                    <h2 class="section" id="best-practices">How Can We Make Web Design More Accessible?</h2>
+                </header>
+                <p class="headline">
+                    Accessibility in web design means making sure everyone, including people with disabilities, can use
+                    and navigate websites easily. It’s about creating a better experience for all users.
+                </p>
+                <p>
+                    A simple way to start is by picking fonts and colors carefully. Use strong contrast between text and
+                    background so it’s easy to read, especially for people with vision problems. For body text,
+                    sans-serif fonts are great because they’re clear at smaller sizes. Serif fonts can work for headings
+                    since they’re bigger and easier to see.
+                </p>
+                <p>
+                    Another key part of accessibility is adding alt text to images. Alt text lets people using screen
+                    readers understand what an image is about. Also, make sure buttons, forms, and other clickable
+                    things have clear labels and instructions so everyone knows how to use them.
+                </p>
+
+                <blockquote class="quote">
+                    "UDL isn’t about erasing differences to make “one-size-fits-all” lessons and assessments. It’s about
+                    recognizing barriers, naming them, highlighting them, celebrating them, and designing for them."
+                    <p><cite>– Katie Novak</cite></p>
+                </blockquote>
+            </article>
+
+            <hr>
+
+            <article aria-labelledby="fundamentals">
+                <header>
+                    <h2 class="section" id="fundamentals">Fundamentals of Accessible Design</h2>
+                </header>
+
+                <article aria-labelledby="keyboard-navigation">
+                    <header>
+                        <h3 id="keyboard-navigation" class="subsection">Keyboard Navigation</h3>
+                    </header>
+                    <p>
+                        Many users rely on keyboard navigation, so it's important to make sure that every interactive
+                        element, like links and buttons, can be accessed and used with a keyboard alone. Also, adding a
+                        visible focus to each interactive element highlights where the user is on the page, making
+                        navigation easier for all.
+                    </p>
+                    <p>
+                        When creating content sections, you should use semantic HTML elements like <code>header</code>,
+                        <code>main</code>, <code>footer</code>, and appropriate heading levels (<code>H1</code>,
+                        <code>H2</code>, etc.). This helps screen readers understand the document structure and allows
+                        users to navigate through sections with ease.
+                    </p>
+                </article>
+
+                <article aria-labelledby="color-contrast">
+                    <header>
+                        <h3 id="color-contrast" class="subsection">Color Contrast</h3>
+                    </header>
+                    <p>
+                        Color contrast is important for users with visual impairments. A good rule of thumb is to use a
+                        contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. Tools like the WAVE can
+                        help make sure your color choices meet accessibility standards.
+                    </p>
+                </article>
+
+                <article aria-labelledby="alternative-text">
+                    <header>
+                        <h3 id="alternative-text" class="subsection">Alternative Text</h3>
+                    </header>
+                    <p>
+                        Providing alternative text (alt text) for images is an essential part of accessibility. Alt text
+                        allows screen readers to describe images to visually impaired users, ensuring that they don’t
+                        miss out on important information given through visuals.
+                    </p>
+                </article>
+
+                <article aria-labelledby="aria-roles-attributes">
+                    <header>
+                        <h3 id="aria-roles-attributes" class="subsection">ARIA Roles and Attributes</h3>
+                    </header>
+                    <p>
+                        ARIA (Accessible Rich Internet Applications) roles and attributes provide additional information
+                        about elements to assistive technologies. For example, setting <code>role="navigation"</code> on
+                        a <code>nav</code> element helps screen readers identify it as a navigation section.
+                    </p>
+                </article>
+            </article>
+
+            <hr>
+
+            <article aria-labelledby="text-layout">
+                <header>
+                    <h2 id="text-layout" class="section">Accessible Text and Layout Techniques</h2>
+                </header>
+
+                <article aria-labelledby="accessible-font-size">
+                    <header>
+                        <h3 id="accessible-font-size" class="subsection">Accessible Font Size</h3>
+                    </header>
+                    <p>
+                        Ensuring that text is readable is a critical part of accessibility. A minimum font size of 16px
+                        is generally recommended, as it provides readability for most users. Adjust font sizes relative
+                        to the context, ensuring that body text is easy to read and headings are clearly
+                        distinguishable.
+                    </p>
+                </article>
+
+                <article aria-labelledby="relative-units">
+                    <header>
+                        <h3 id="relative-units" class="subsection">Relative Units for Accessibility</h3>
+                    </header>
+                    <p>
+                        Using relative units like <code>em</code> and <code>rem</code> is better for creating accessible
+                        layouts. These units scale according to user settings, allowing text and other elements to
+                        adjust based on the root font size. This approach is good for user preferences and makes
+                        websites more adaptable to different screen sizes and resolutions.
+                    </p>
+                </article>
+
+                <article aria-labelledby="rem-scaling">
+                    <header>
+                        <h3 id="rem-scaling" class="subsection">Rem for Consistent Scaling</h3>
+                    </header>
+                    <p>
+                        The <code>rem</code> unit is particularly good for accessibility as it references the root font
+                        size, allowing all elements to scale consistently. For example, if the base font size is 16px
+                        and you set an element to <code>2rem</code>, it will render at 32px. This makes it easier to
+                        manage font sizes and ensures a consistent experience for users who adjust text size in their
+                        browser settings.
+                    </p>
+                </article>
+            </article>
+
+            <hr>
+
+            <article aria-labelledby="best-approach">
+                <header>
+                    <h3 id="best-approach" class="section">Which Approach is Best for Accessibility?</h3>
+                </header>
+                <p>
+                    Generally, using relative units like <code>em</code> and <code>rem</code> is recommended for
+                    accessibility. Unlike fixed pixel values, these units allow text and layout elements to respond to
+                    user preferences. This flexibility is particularly important for users who need larger fonts or
+                    different screen settings.
+                </p>
+                <p>
+                    Between <code>em</code> and <code>rem</code>, <code>rem</code> is usually better because it creates
+                    a single scaling system across the entire document. This makes it easier to adjust font sizes
+                    everywhere by modifying the root size, which will automatically scale all elements using
+                    <code>rem</code> units.
+                </p>
+                <p>
+                    Even though pixel units can be useful in small projects, it’s important to understand that they may
+                    not provide a fully accessible experience. Going for responsive, scalable units helps create a more
+                    inclusive design that accommodates various user needs and device types.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <header class="hidden">
+                <h3>All Rights Reserved</h3>
+            </header>
+            <p>&copy; All Rights Reserved by Mr. Jeshua</p>
+        </footer>
+    </div>
+</body>
+
+</html>
